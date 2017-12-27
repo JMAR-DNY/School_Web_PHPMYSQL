@@ -1,0 +1,21 @@
+#box1 {
+    text-align: center;
+    font-size: 2em;
+    position: relative;
+}
+
+#dbWrapper {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+#downloadLinks {
+    margin: 2em;
+    text-align: center;
+}
+
+#box2 {
+    background-image: url(../assets/mysqlmonths.png);
+    /* Image is centered vertically and horizontally at all times */
+    background-color: #464646;
+    position: relative;
+}

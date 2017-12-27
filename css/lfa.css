@@ -1,0 +1,25 @@
+table {
+    margin: 1.5em auto;
+    font-size: 2em;
+}
+
+td {
+    padding: 5px;
+}
+
+
+/*This sets every other table row to have a different background color */
+
+.odd {
+    background: #80C1B5;
+}
+
+#lfaWrapper {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#downloadLinks {
+    margin: 2em;
+    text-align: center;
+    font-size: 2em;
+}

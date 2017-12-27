@@ -1,0 +1,110 @@
+/*COLORS
+#ff8500 - background
+rgba(11, 46, 182, 0.73) - lower opacity text
+rgb(11, 46, 182)-solid text
+#80C1B5 - hover text
+**/
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.box {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+    /* This is what makes the background image rescale based on its container's size */
+    background-position: center center;
+    /* Image doesn't repeat */
+    background-repeat: no-repeat;
+    /* Makes the image fixed in the viewport so that it doesn't move when 
+      the content height is greater than the image height */
+    display: table;
+}
+
+#nav {
+    text-align: center;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    background: red;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(-90deg, red, yellow);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-90deg, red, yellow);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-90deg, red, yellow);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-90deg, red, yellow);
+    /* Standard syntax */
+    z-index: 100;
+    -webkit-box-shadow: 0px 0px 20px rgba(44, 44, 44, .3);
+}
+
+#nav ul {
+    width: 100%;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#nav li {
+    display: inline;
+}
+
+#nav li>ul>li {
+    display: block;
+    background: #ff8500;
+}
+
+#nav ul ul {
+    left: 40%;
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 400px;
+    background: #fff;
+    padding: 0
+}
+
+#nav ul li:hover>ul {
+    display: block;
+    z-index: 100;
+}
+
+a:hover {
+    color: #80C1B5;
+}
+
+a {
+    height: 50px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    color: rgb(11, 46, 182);
+    text-decoration: none;
+    -o-transition: color .2s ease-out, background .3s ease-in;
+    -ms-transition: color .2s ease-out, background .3s ease-in;
+    -moz-transition: color .2s ease-out, background .3s ease-in;
+    -webkit-transition: color .2s ease-out, background .3s ease-in;
+    transition: color .2s ease-out, background .3s ease-in;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: minmax(450px, auto);
+    padding: 1em;
+}
+
+.wrapper>div {
+    background: #eee;
+    padding: 50px 2em 2em 2em;
+    -webkit-box-shadow: 0px 0px 20px rgba(44, 44, 44, .3);
+}

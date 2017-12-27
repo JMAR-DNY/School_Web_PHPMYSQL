@@ -1,0 +1,20 @@
+#box1 {
+    background-image: url(../assets/server.png);
+    /* Image is centered vertically and horizontally at all times */
+    background-color: #464646;
+    position: relative;
+}
+
+#box2 {
+    background-image: url(../assets/phpinfo.png);
+    /* Image is centered vertically and horizontally at all times */
+    background-color: #464646;
+    position: relative;
+}
+
+#box3 {
+    background-image: url(../assets/phpmyadmin.png);
+    /* Image is centered vertically and horizontally at all times */
+    background-color: #464646;
+    position: relative;
+}
